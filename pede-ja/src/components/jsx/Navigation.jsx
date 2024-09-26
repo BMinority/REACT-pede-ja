@@ -1,19 +1,23 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Navigation.css';
 
 function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeItem, setActiveItem] = useState('#home');
 
+    // Função para abrir/fechar o menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    // Função para atualizar o item ativo e fechar o menu ao clicar
     const handleItemClick = (hash) => {
         setActiveItem(hash);
         setIsMenuOpen(false);
     };
 
+    // Função para fechar o menu quando clicar fora dele
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (isMenuOpen && !event.target.closest('.navigation')) {
@@ -33,24 +37,24 @@ function Navigation() {
                 <nav>
                     <ul>
                         <li className={activeItem === '#home' ? 'active' : ''}>
-                            <a href="#home" onClick={() => handleItemClick('#home')}>
+                            <Link to="/" onClick={() => handleItemClick('#home')}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className={activeItem === '#promo' ? 'active' : ''}>
-                            <a href="#promo" onClick={() => handleItemClick('#promo')}>
+                            <Link to="/promo" onClick={() => handleItemClick('#promo')}>
                                 Promoções
-                            </a>
+                            </Link>
                         </li>
                         <li className={activeItem === '#pedeLover' ? 'active' : ''}>
-                            <a href="#pedeLover" onClick={() => handleItemClick('#pedeLover')}>
+                            <Link to="/pedeLover" onClick={() => handleItemClick('#pedeLover')}>
                                 Pede Lover
-                            </a>
+                            </Link>
                         </li>
                         <li className={activeItem === '#pedeCard' ? 'active' : ''}>
-                            <a href="#pedeCard" onClick={() => handleItemClick('#pedeCard')}>
+                            <Link to="/pedeCard" onClick={() => handleItemClick('#pedeCard')}>
                                 Pede Card
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
