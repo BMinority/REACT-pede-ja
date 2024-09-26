@@ -1,0 +1,47 @@
+@import url('../../App.css');
+
+.header-pede {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1vw;
+
+    background-color: #3e3e3e;
+}
+
+.header-pede div a {
+    text-decoration: none;
+    color: var(--texto-cor-claro);
+    margin-right: 1.5vw;
+}
+
+.header-pede div a:hover {
+    color: var(--cor-laranja);
+}
+
+.pede-icon img {
+    width: 8vw;
+}
+
+.header-pede div .enter {
+    background-color: var(--cor-vermelho);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*MEDIA*/
+@media (max-width: 430px) {
+    .header-pede .pede-options {
+        display: none;
+    }
+
+    .header-pede {
+        padding: 3vw;
+    }
+
+    .pede-icon img {
+        width: 20vw;
+    }
+}
