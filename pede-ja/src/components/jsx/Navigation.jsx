@@ -6,18 +6,18 @@ function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeItem, setActiveItem] = useState('#home');
 
-    // Função para abrir/fechar o menu
+    //abrir/fechar o menu
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Função para atualizar o item ativo e fechar o menu ao clicar
+    //atualizar o item ativo e fechar o menu
     const handleItemClick = (hash) => {
         setActiveItem(hash);
         setIsMenuOpen(false);
     };
 
-    // Função para fechar o menu quando clicar fora dele
+    //fechar o menu quando clicar fora
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (isMenuOpen && !event.target.closest('.navigation')) {
