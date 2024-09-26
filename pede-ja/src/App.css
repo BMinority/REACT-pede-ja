@@ -1,42 +1,81 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* Cores principais */
+  --cor-vermelho: #D32F2F;
+  --cor-laranja: #F57C00;
+  --cor-amarelo: #FFEB3B;
+  --cor-branco: #FFFFFF;
+
+  /* Cores secundárias e variações */
+  --cor-vermelho-claro: #FF5252;
+  --cor-laranja-claro: #FF9800;
+  --cor-amarelo-claro: #FFF176;
+
+  /* Cores de texto */
+  --texto-cor-claro: #FAFAFA;
+  --texto-cor-escuro: #212121;
+
+  /* Fundo */
+  --fundo-primario: var(--cor-branco);
+  --fundo-secundario: var(--cor-vermelho);
+  --fundo-destaque: var(--cor-laranja);
+
+  /* Borda */
+  --borda-primaria: var(--cor-vermelho);
+  --borda-destaque: var(--cor-amarelo);
+
+  /*--------------- FONTES ----------------------*/
+
+  /* Fontes principais */
+  --fonte-titulo: 'Montserrat', sans-serif;
+  --fonte-texto: 'Roboto', sans-serif;
+  --fonte-destaque: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Raleway', sans-serif;
+
+  /* Tamanhos */
+  --tamanho-base: 16px;
+  --tamanho-titulo-grande: 3rem;
+  --tamanho-titulo: 2rem;
+  --tamanho-subtitulo: 1.5rem;
+  --tamanho-texto: 1rem;
+  --tamanho-pequeno: 0.875rem;
+
+  /* Pesos*/
+  --peso-normal: 400;
+  --peso-medio: 500;
+  --peso-semi-negrito: 600;
+  --peso-negrito: 700;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-base);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fonte-titulo);
+  font-weight: var(--peso-negrito);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: var(--tamanho-titulo-grande);
 }
 
-.card {
-  padding: 2em;
+h2 {
+  font-size: var(--tamanho-titulo);
 }
 
-.read-the-docs {
-  color: #888;
+p {
+  font-family: var(--fonte-texto);
+  font-size: var(--tamanho-texto);
+  font-weight: var(--peso-normal);
+}
+
+.button {
+  font-family: var(--fonte-destaque);
+  font-weight: var(--peso-semi-negrito);
+  font-size: var(--tamanho-subtitulo);
 }
