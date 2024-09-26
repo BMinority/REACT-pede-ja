@@ -1,0 +1,21 @@
+@import url('../../App.css');
+
+.navigation {
+    background-color: var(--cor-vermelho);
+    padding: 1vw;
+    width: 10vw;
+    height: 100vh;
+}
+
+
+.navigation section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.navigation section ul li a {
+    color: var(--texto-cor-claro);
+    text-decoration: none;
+}

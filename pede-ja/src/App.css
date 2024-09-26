@@ -14,15 +14,6 @@
   --texto-cor-claro: #FAFAFA;
   --texto-cor-escuro: #212121;
 
-  /* Fundo */
-  --fundo-primario: var(--cor-branco);
-  --fundo-secundario: var(--cor-vermelho);
-  --fundo-destaque: var(--cor-laranja);
-
-  /* Borda */
-  --borda-primaria: var(--cor-vermelho);
-  --borda-destaque: var(--cor-amarelo);
-
   /*--------------- FONTES ----------------------*/
 
   /* Fontes principais */
