@@ -9,7 +9,7 @@
     padding: 1vw;
 
     background-color: #3e3e3e;
-    position: sticky;
+    position: fixed;
 }
 
 .header-pede div a {
