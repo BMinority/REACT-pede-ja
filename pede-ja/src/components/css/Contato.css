@@ -1,0 +1,102 @@
+@import url('../../App.css');
+
+.contato-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 9rem 2rem 2rem;
+    color: #333;
+}
+
+.contato-info {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info h1 {
+    font-size: 2rem;
+    color: var(--cor-vermelho);
+    margin-bottom: 1rem;
+}
+
+.contato-info p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.contato-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.contato-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: var(--cor-vermelho);
+}
+
+.contato-form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form h2 {
+    font-size: 1.8rem;
+    color: var(--cor-vermelho);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: var(--cor-vermelho);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--cor-vermelho-claro);
+}
+
+@media (max-width: 768px) {
+    .contato-page {
+        grid-template-columns: 1fr;
+    }
+}
