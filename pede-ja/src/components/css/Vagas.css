@@ -1,0 +1,77 @@
+@import url('../../App.css');
+
+.vagas-page {
+    padding: 2rem;
+    color: #333;
+}
+
+.vagas-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vagas-header h1 {
+    font-size: 2.5rem;
+    color: var(--cor-vermelho);
+}
+
+.vagas-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.vagas-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.vaga-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vaga-card h2 {
+    font-size: 1.8rem;
+    color: var(--cor-vermelho);
+    margin-bottom: 1rem;
+}
+
+.vaga-card h3 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--cor-laranja);
+}
+
+.vaga-card ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.vaga-card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.apply-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--cor-vermelho);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: var(--cor-vermelho-claro);
+}
+
+@media (max-width: 600px) {
+    .vagas-lista {
+        grid-template-columns: 1fr;
+    }
+}
