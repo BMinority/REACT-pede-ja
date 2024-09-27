@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.pede-card-page {
+.pede-card-box {
     display: flex;
     justify-content: space-between;
     padding: 9rem 2rem 2rem;
@@ -19,6 +19,7 @@
     width: 100%;
     max-width: 300px;
     border-radius: 8px;
+    box-shadow: 2px 4px 4px #333;
 }
 
 .benefits {
@@ -109,9 +110,11 @@
 }
 
 @media (max-width: 768px) {
-    .pede-card-page {
+    .pede-card-box {
         flex-direction: column;
         align-items: center;
+
+        padding: 28vw 4vw 4vw;
     }
 
     .right-section {

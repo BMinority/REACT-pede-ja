@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.vagas-page {
+.vagas-box {
     padding: 8.5rem 2rem 2rem;
     color: #333;
 }
@@ -71,6 +71,10 @@
 }
 
 @media (max-width: 600px) {
+    .vagas-box {
+        padding: 25vw 4vw 4vw;
+    }
+
     .vagas-lista {
         grid-template-columns: 1fr;
     }

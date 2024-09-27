@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.contato-page {
+.contato-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -96,7 +96,8 @@
 }
 
 @media (max-width: 768px) {
-    .contato-page {
+    .contato-box {
         grid-template-columns: 1fr;
+        padding: 25vw 4vw 4vw;
     }
 }

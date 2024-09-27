@@ -39,29 +39,31 @@ function PedeLover() {
 
     return (
         <div className="pede-lover-page">
-            <h1>Pede Lover: Seu Programa de Fidelidade</h1>
-            <p>Assine um de nossos planos e aproveite promoções exclusivas, descontos em pedidos, e muito mais!</p>
+            <div className="pede-lover-box">
+                <h1>Pede Lover: Seu Programa de Fidelidade</h1>
+                <p>Assine um de nossos planos e aproveite promoções exclusivas, descontos em pedidos, e muito mais!</p>
 
-            <div className="plans-grid">
-                {plans.map((plan) => (
-                    <div className="plan-card" key={plan.id}>
-                        <h3>{plan.name}</h3>
-                        <p>{plan.description}</p>
-                        <p className="plan-price">{plan.price}</p>
-                        <ul>
-                            {plan.benefits.map((benefit, index) => (
-                                <li key={index}>{benefit}</li>
-                            ))}
-                        </ul>
-                        <h4>Métodos de Pagamento</h4>
-                        <div className="payment-methods">
-                            <i className="fa-solid fa-credit-card"></i>
-                            <i className="fa-solid fa-money-bill-wave"></i>
-                            <i className="fa-brands fa-pix"></i>
+                <div className="plans-grid">
+                    {plans.map((plan) => (
+                        <div className="plan-card" key={plan.id}>
+                            <h3>{plan.name}</h3>
+                            <p>{plan.description}</p>
+                            <p className="plan-price">{plan.price}</p>
+                            <ul>
+                                {plan.benefits.map((benefit, index) => (
+                                    <li key={index}>{benefit}</li>
+                                ))}
+                            </ul>
+                            <h4>Métodos de Pagamento</h4>
+                            <div className="payment-methods">
+                                <i className="fa-solid fa-credit-card"></i>
+                                <i className="fa-solid fa-money-bill-wave"></i>
+                                <i className="fa-brands fa-pix"></i>
+                            </div>
+                            <button className="subscribe-button">Assine Agora</button>
                         </div>
-                        <button className="subscribe-button">Assine Agora</button>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     )

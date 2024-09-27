@@ -42,28 +42,30 @@ function Vagas() {
 
     return (
         <div className="vagas-page">
-            <section className="vagas-header">
-                <h1>Trabalhe Conosco</h1>
-                <p>Confira as oportunidades disponíveis e faça parte do time PedeJá.</p>
-            </section>
+            <div className="vagas-box">
+                <section className="vagas-header">
+                    <h1>Trabalhe Conosco</h1>
+                    <p>Confira as oportunidades disponíveis e faça parte do time PedeJá.</p>
+                </section>
 
-            <section className="vagas-lista">
-                {vagas.map((vaga) => (
-                    <div className="vaga-card" key={vaga.id}>
-                        <h2>{vaga.titulo}</h2>
-                        <p>{vaga.descricao}</p>
-                        <h3>Requisitos:</h3>
-                        <ul>
-                            {vaga.requisitos.map((requisito, index) => (
-                                <li key={index}>{requisito}</li>
-                            ))}
-                        </ul>
-                        <p><strong>Local:</strong> {vaga.local}</p>
-                        <p><strong>Tipo:</strong> {vaga.tipo}</p>
-                        <button className="apply-btn">Candidatar-se</button>
-                    </div>
-                ))}
-            </section>
+                <section className="vagas-lista">
+                    {vagas.map((vaga) => (
+                        <div className="vaga-card" key={vaga.id}>
+                            <h2>{vaga.titulo}</h2>
+                            <p>{vaga.descricao}</p>
+                            <h3>Requisitos:</h3>
+                            <ul>
+                                {vaga.requisitos.map((requisito, index) => (
+                                    <li key={index}>{requisito}</li>
+                                ))}
+                            </ul>
+                            <p><strong>Local:</strong> {vaga.local}</p>
+                            <p><strong>Tipo:</strong> {vaga.tipo}</p>
+                            <button className="apply-btn">Candidatar-se</button>
+                        </div>
+                    ))}
+                </section>
+            </div>
         </div>
     )
 }

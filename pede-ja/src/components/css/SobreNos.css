@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.sobre-nos-page {
+.sobre-nos-box {
     padding: 9rem 2rem 2rem;
     color: #333;
 }
@@ -72,6 +72,10 @@
 
 /* Responsividade */
 @media (max-width: 600px) {
+    .sobre-nos-box {
+        padding: 25vw 4vw 4vw;
+    }
+
     .team-grid {
         grid-template-columns: 1fr;
     }

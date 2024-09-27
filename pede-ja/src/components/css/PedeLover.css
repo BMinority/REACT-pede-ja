@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.pede-lover-page {
+.pede-lover-box {
     padding: 9rem 2rem 2rem;
     text-align: center;
 }
@@ -75,7 +75,11 @@
 }
 
 @media (max-width: 430px) {
-    .pede-lover-page h1 {
-        font-size: 8vw;
+    .pede-lover-box {
+        padding: 25vw 4vw 4vw;
+    }
+
+    .pede-lover-box h1 {
+        font-size: 9vw;
     }
 }
