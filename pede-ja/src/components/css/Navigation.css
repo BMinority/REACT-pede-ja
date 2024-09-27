@@ -50,6 +50,8 @@
     color: var(--texto-cor-claro);
     transition: left 0.3s ease-in-out;
 
+    opacity: 0.4;
+
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 }
