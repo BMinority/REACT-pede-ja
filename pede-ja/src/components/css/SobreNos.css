@@ -1,0 +1,78 @@
+@import url('../../App.css');
+
+.sobre-nos-page {
+    padding: 9rem 2rem 2rem;
+    color: #333;
+}
+
+.sobre-nos-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sobre-nos-header h1 {
+    font-size: 2.5rem;
+    color: var(--cor-vermelho);
+}
+
+.sobre-nos-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.sobre-nos-missao,
+.sobre-nos-visao,
+.sobre-nos-valores {
+    margin-bottom: 2rem;
+}
+
+.sobre-nos-missao h2,
+.sobre-nos-visao h2,
+.sobre-nos-valores h2 {
+    font-size: 2rem;
+    color: var(--cor-vermelho);
+    margin-bottom: 1rem;
+}
+
+.sobre-nos-valores ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
