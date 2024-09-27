@@ -1,17 +1,21 @@
 @import url('../../App.css');
 
 .home {
-    padding: 2rem;
+    padding: 10rem 2rem 2rem;
 }
 
 .banner {
     text-align: center;
+    text-shadow: 1px 2px 2px #000000a9;
     padding: 4rem 0;
     background-image: url('../../assets/BannerHome-PDJ.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: var(--texto-cor-claro);
+
+    border-radius: 14px;
+    box-shadow: 1px 4px 4px #3e3e3e94;
 }
 
 .banner button {
@@ -90,4 +94,26 @@
 
 .newsletter button:hover {
     background-color: var(--cor-vermelho-claro);
+}
+
+.newsletter h2 {
+    margin-bottom: 2vw;
+}
+
+@media (max-width: 430px) {
+    .home {
+        padding: 7rem 1rem 1rem;
+    }
+
+    .banner {
+        padding: 4rem 0;
+    }
+
+    .banner p {
+        font-size: 5.5vw;
+    }
+
+    .banner button {
+        font-size: 6vw;
+    }
 }
