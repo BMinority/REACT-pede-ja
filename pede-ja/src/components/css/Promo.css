@@ -1,0 +1,74 @@
+@import url('../../App.css');
+
+.promo-page {
+    padding: 8rem 2rem 2rem;
+    text-align: center;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.promo-grid .promo-card {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promo-grid .promo-card img {
+    width: 20vw;
+    height: 10vw;
+    border-radius: 8px;
+}
+
+.promo-grid .promo-card h3 {
+    margin: 1rem 0;
+    color: var(--cor-vermelho);
+}
+
+.promo-grid .promo-card p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.promo-grid .promo-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.promo-grid .promo-card .new-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-vermelho);
+}
+
+.promo-grid .promo-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--cor-vermelho);
+    color: var(--texto-cor-claro);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.promo-grid .promo-card button:hover {
+    background-color: var(--cor-vermelho-claro);
+}
+
+@media (max-width: 430px) {
+    .promo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .promo-grid .promo-card img {
+        width: 30vw;
+        height: 21vw;
+    }
+}
