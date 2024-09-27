@@ -18,7 +18,9 @@ function Header() {
     return (
         <div className="header-pede">
             <div className="pede-icon">
-                <img src={PedeIcon} alt="Ícone do Pede Já" />
+                <Link to="/">
+                    <img src={PedeIcon} alt="Ícone do Pede Já" />
+                </Link>
             </div>
 
             <div className="menu-hamburguer" onClick={toggleMenu}>
