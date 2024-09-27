@@ -65,6 +65,20 @@
 }
 
 /*MEDIA*/
+@media (max-width: 2560px) {
+    .navigation {
+        width: auto;
+        left: -8vw;
+    }
+}
+
+@media (max-width: 1450px) {
+    .navigation {
+        width: auto;
+        left: -10vw;
+    }
+}
+
 @media (max-width: 1115px) {
     .navigation {
         width: auto;

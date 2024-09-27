@@ -70,6 +70,12 @@
     background-color: var(--cor-vermelho-claro);
 }
 
+@media (width: 2560px) {
+    .vagas-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 600px) {
     .vagas-box {
         padding: 25vw 4vw 4vw;

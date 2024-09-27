@@ -100,6 +100,12 @@
     margin-bottom: 2vw;
 }
 
+@media (width: 2560px) {
+    .home-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 430px) {
     .home-box {
         padding: 7rem 1rem 1rem;

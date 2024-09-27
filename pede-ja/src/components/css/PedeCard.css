@@ -109,6 +109,12 @@
     background-color: var(--cor-vermelho-claro);
 }
 
+@media (width: 2560px) {
+    .pede-card-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 768px) {
     .pede-card-box {
         flex-direction: column;

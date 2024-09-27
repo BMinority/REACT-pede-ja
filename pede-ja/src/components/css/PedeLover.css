@@ -74,6 +74,12 @@
     background-color: var(--cor-vermelho-claro);
 }
 
+@media (width: 2560px) {
+    .pede-lover-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 430px) {
     .pede-lover-box {
         padding: 25vw 4vw 4vw;

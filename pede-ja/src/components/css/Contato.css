@@ -95,6 +95,12 @@
     background-color: var(--cor-vermelho-claro);
 }
 
+@media (width: 2560px) {
+    .contato-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 768px) {
     .contato-box {
         grid-template-columns: 1fr;

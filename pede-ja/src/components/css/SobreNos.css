@@ -70,7 +70,12 @@
     color: #777;
 }
 
-/* Responsividade */
+@media (width: 2560px) {
+    .sobre-nos-box {
+        padding: 15rem 4rem 4rem;
+    }
+}
+
 @media (max-width: 600px) {
     .sobre-nos-box {
         padding: 25vw 4vw 4vw;
