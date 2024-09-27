@@ -1,6 +1,6 @@
 @import url('../../App.css');
 
-.home {
+.home-box {
     padding: 10rem 2rem 2rem;
 }
 
@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 430px) {
-    .home {
+    .home-box {
         padding: 7rem 1rem 1rem;
     }
 
