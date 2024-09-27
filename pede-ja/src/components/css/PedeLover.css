@@ -1,0 +1,81 @@
+@import url('../../App.css');
+
+.pede-lover-page {
+    padding: 9rem 2rem 2rem;
+    text-align: center;
+}
+
+.pede-lover-page h1 {
+    margin-bottom: 2vw;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.plan-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card h3 {
+    color: var(--cor-vermelho);
+    margin-bottom: 1rem;
+}
+
+.plan-card p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.plan-card .plan-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--cor-vermelho);
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    color: #333;
+}
+
+.subscribe-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--cor-vermelho);
+    color: var(--texto-cor-claro);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: var(--cor-vermelho-claro);
+}
+
+@media (max-width: 430px) {
+    .pede-lover-page h1 {
+        font-size: 8vw;
+    }
+}
