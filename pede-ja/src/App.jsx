@@ -11,6 +11,8 @@ import PedeCard from './components/jsx/PedeCard';
 import SobreNos from './components/jsx/SobreNos';
 import Vagas from './components/jsx/Vagas';
 import Contato from './components/jsx/Contato';
+import CreateAccount from './components/jsx/CreateAccount';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path="/sobre-nos" element={<SobreNos />} />
           <Route path="/vagas" element={<Vagas />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/create-account" element={<CreateAccount />} />
         </Routes>
       </main>
     </Router>
