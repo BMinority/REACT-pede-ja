@@ -1,0 +1,93 @@
+@import url('../../App.css');
+
+.home {
+    padding: 2rem;
+}
+
+.banner {
+    text-align: center;
+    padding: 4rem 0;
+    background-image: url('../../assets/BannerHome-PDJ.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--texto-cor-claro);
+}
+
+.banner button {
+    background-color: var(--cor-vermelho);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--texto-cor-claro);
+    box-shadow: 1px 2px 2px #0000004d;
+
+    font-size: 2vw;
+    cursor: pointer;
+    margin-top: 2vw;
+
+    transition: 0.2s;
+}
+
+.banner button:hover {
+    background-color: var(--cor-vermelho-claro);
+}
+
+.promo-section {
+    padding: 2rem 0;
+}
+
+.promo-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vw;
+}
+
+.promo-card {
+    padding: 1rem;
+    background-color: var(--cor-vermelho-claro);
+    color: var(--texto-cor-claro);
+    border-radius: 8px;
+    width: 30%;
+}
+
+.testimonials {
+    padding: 2rem 0;
+}
+
+.testimonials h2 {
+    margin-bottom: 2vw;
+}
+
+.testimonial {
+    padding: 1rem;
+    background-color: var(--cor-vermelho-claro);
+    color: var(--texto-cor-claro);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    width: 50%;
+    margin-right: 1rem;
+}
+
+.newsletter button {
+    padding: 0.5rem 1rem;
+    background-color: var(--cor-vermelho);
+    color: var(--texto-cor-claro);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.newsletter button:hover {
+    background-color: var(--cor-vermelho-claro);
+}
