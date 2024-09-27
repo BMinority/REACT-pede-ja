@@ -5,20 +5,29 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1vw;
-
     background-color: #3e3e3e;
     position: fixed;
 }
 
-.header-pede div a {
+/* Menu de navegação normal */
+.pede-options,
+.pede-login {
+    display: flex;
+    align-items: center;
+}
+
+.pede-options a,
+.pede-login a,
+.pede-login .enter {
     text-decoration: none;
     color: var(--texto-cor-claro);
     margin-right: 1.5vw;
 }
 
-.header-pede div a:hover {
+.pede-options a:hover,
+.pede-login a:hover,
+.pede-login .enter:hover {
     color: var(--cor-laranja);
 }
 
@@ -26,7 +35,8 @@
     width: 8vw;
 }
 
-.header-pede div .enter {
+/* Botão de login */
+.pede-login .enter {
     background-color: var(--cor-vermelho);
     padding: 10px;
     border-radius: 10px;
@@ -35,10 +45,46 @@
     transition: 0.2s ease;
 }
 
-.header-pede div .enter:hover {
+.pede-login .enter:hover {
     background-color: var(--cor-laranja);
 }
 
+/* Menu hamburguer escondido por padrão (para telas grandes) */
+.menu-hamburguer {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown do menu hamburguer (escondido inicialmente) */
+.dropdown-menu {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 200px;
+    text-align: center;
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+    display: block;
+    margin-bottom: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+    color: var(--cor-laranja);
+}
+
+/* Modal de login */
 .login-modal {
     position: fixed;
     top: 0;
@@ -88,10 +134,16 @@
     margin-top: 1rem;
 }
 
-/*MEDIA*/
+
 @media (max-width: 430px) {
-    .header-pede .pede-options {
+
+    .pede-options,
+    .pede-login {
         display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
     }
 
     .header-pede {
@@ -100,5 +152,21 @@
 
     .pede-icon img {
         width: 20vw;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        top: 5rem;
+    }
+
+    .dropdown-menu button {
+        background-color: var(--cor-vermelho);
+        color: var(--texto-cor-claro);
+        font-size: 1rem;
+        padding: 1vw;
+        border-radius: 14px;
     }
 }
