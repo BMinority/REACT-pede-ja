@@ -1,1 +1,87 @@
 @import url('../../App.css');
+
+.shopping-wrapper a {
+    text-decoration: none;
+    color: var(--texto-cor-escuro);
+}
+
+.sw-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 1vw;
+}
+
+.sw-options ul li {
+    text-align: center;
+    list-style: none;
+
+    background-color: #e4e4e4;
+    box-shadow: 1px 4px 4px #38383863;
+    padding: 1vw;
+    border-radius: 14px;
+    width: 8rem;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sw-options ul li:hover {
+    transform: translateY(-5%);
+}
+
+.sw-options ul li a p {
+    font-size: 1vw;
+}
+
+@media (width: 2560px) {
+    .sw-options ul {
+        padding-top: 2vw;
+    }
+
+    .sw-options ul li {
+        width: 12rem;
+    }
+
+    .sw-options ul li a p {
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 840px) {
+    .sw-options ul {
+        padding-top: 2vw;
+        gap: 2.7vw;
+    }
+
+    .sw-options ul li {
+        width: 9rem;
+    }
+
+    .sw-options ul li a p {
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .sw-options ul {
+        padding-top: 3vw;
+        gap: 2.7vw;
+    }
+
+    .sw-options ul li {
+        width: 5rem;
+    }
+
+    .sw-options ul li img {
+        width: 8vw;
+        height: auto;
+    }
+
+    .sw-options ul li a p {
+        font-size: 3vw;
+    }
+}
