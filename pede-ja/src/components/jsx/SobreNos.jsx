@@ -1,5 +1,9 @@
 import '../css/SobreNos.css'
 
+import Member_01 from '../../assets/member_01.jpg'
+import Member_02 from '../../assets/member_02.jpg'
+import Member_03 from '../../assets/member_03.jpg'
+
 function SobreNos() {
     return (
         <div className="sobre-nos-page">
@@ -39,17 +43,17 @@ function SobreNos() {
                     <p>Conheça algumas das pessoas por trás do PedeJá.</p>
                     <div className="team-grid">
                         <div className="team-member">
-                            <img src="path_to_member_image_1" alt="Nome do Membro 1" />
+                            <img src={Member_01} alt="Nome do Membro 1" />
                             <h3>Nome do Membro 1</h3>
                             <p>CEO</p>
                         </div>
                         <div className="team-member">
-                            <img src="path_to_member_image_2" alt="Nome do Membro 2" />
+                            <img src={Member_02} alt="Nome do Membro 2" />
                             <h3>Nome do Membro 2</h3>
                             <p>CTO</p>
                         </div>
                         <div className="team-member">
-                            <img src="path_to_member_image_3" alt="Nome do Membro 3" />
+                            <img src={Member_03} alt="Nome do Membro 3" />
                             <h3>Nome do Membro 3</h3>
                             <p>CMO</p>
                         </div>
