@@ -1,4 +1,5 @@
 import '../css/Home.css'
+import ShoppingWrapper from './ShoppingWrapper';
 
 function Home() {
     return (
@@ -19,6 +20,10 @@ function Home() {
                         <div className="promo-card">Promoção 2</div>
                         <div className="promo-card">Promoção 3</div>
                     </div>
+                </section>
+
+                <section className="shopping-wrapper">
+                    <ShoppingWrapper />
                 </section>
 
                 <section className="testimonials">
