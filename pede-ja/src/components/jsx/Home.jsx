@@ -1,6 +1,10 @@
 import '../css/Home.css'
 import ShoppingWrapper from './ShoppingWrapper';
 
+import Promo_01 from '../../assets/Promo_marmita.png';
+import Promo_02 from '../../assets/Promo_prato_do_dia.png';
+import Promo_03 from '../../assets/Promo_cerveja.png'
+
 function Home() {
     return (
         <div className="home">
@@ -16,9 +20,21 @@ function Home() {
                 <section className="promo-section">
                     <h2>Promoções Especiais</h2>
                     <div className="promo-cards">
-                        <div className="promo-card">Promoção 1</div>
-                        <div className="promo-card">Promoção 2</div>
-                        <div className="promo-card">Promoção 3</div>
+                        <div className="promo-card">
+                            <a href="#">
+                                <img src={Promo_01} alt="imagem promoção" />
+                            </a>
+                        </div>
+                        <div className="promo-card">
+                            <a href="#">
+                                <img src={Promo_02} alt="imagem promoção" />
+                            </a>
+                        </div>
+                        <div className="promo-card">
+                            <a href="#">
+                                <img src={Promo_03} alt="imagem promoção" />
+                            </a>
+                        </div>
                     </div>
                 </section>
 
