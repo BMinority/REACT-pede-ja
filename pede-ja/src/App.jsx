@@ -12,6 +12,7 @@ import SobreNos from './components/jsx/SobreNos';
 import Vagas from './components/jsx/Vagas';
 import Contato from './components/jsx/Contato';
 import CreateAccount from './components/jsx/CreateAccount';
+import Footer from './components/jsx/Footer';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/create-account" element={<CreateAccount />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
