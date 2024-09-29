@@ -3,16 +3,52 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src//assets//Pede_Ja.png" />
+  <link rel="icon" type="image/svg+xml" href="./src/assets/Pede_Ja.png" />
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pede Já</title>
   <script src="https://kit.fontawesome.com/0a60265145.js" crossorigin="anonymous"></script>
+
+  <style>
+    #loading {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #loading .spinner {
+      width: 50px;
+      height: 50px;
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3e3e3e;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
 </body>

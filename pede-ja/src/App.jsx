@@ -3,6 +3,7 @@ import './components/css/Main.css';
 import Header from './components/jsx/Header';
 import Navigation from './components/jsx/Navigation';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import Home from './components/jsx/Home';
 import Promo from './components/jsx/Promo';
@@ -13,8 +14,34 @@ import Vagas from './components/jsx/Vagas';
 import Contato from './components/jsx/Contato';
 import CreateAccount from './components/jsx/CreateAccount';
 
-
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const handlePageLoad = () => {
+      setIsLoading(false);
+      const loader = document.getElementById('loading');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 500);
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      handlePageLoad();
+    } else {
+      window.addEventListener('load', handlePageLoad);
+    }
+
+    return () => {
+      window.removeEventListener('load', handlePageLoad);
+    };
+  }, []);
+
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <Router>
       <Header />
